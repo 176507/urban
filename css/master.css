@@ -1,0 +1,425 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*Start Header*/
+.header .container {
+   
+    background-image: url(..//images/banner.jpg);
+    height :604px;
+   width :1260px;
+   position :relative ;
+   animation :header 5s  ease;
+}
+.header .container:before {
+    content :"";
+    position :absolute ;
+    top:0;
+    left :0;
+    width :100%;
+    height :100%;
+    background-color :#000;
+    opacity :0.40;
+}
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    background-color: black;
+    z-index: -1
+}
+@keyframes header{
+    0%{
+        z-index:-1
+    }
+    100% {
+        z-index: 1
+    }
+    
+}
+.header .container .top{
+    display :flex ;
+    justify-content :space-between ;
+    align-items :center ;
+    cursor:pointer;
+}
+
+.header .container .top .text {
+    margin-top :30px;
+    display :flex ;
+    
+
+}
+.header .container .top .text h4{
+    color :#3498DB;
+    font-size :18px;
+    font-weight :400;
+
+}
+.header .container .top .text h3{
+    color :floralwhite;
+     font-size :18px;
+    font-weight :400;
+
+}
+.header .container .top .icon{
+    margin-top :30px;
+    color :ghostwhite;
+    display :flex ;
+    justify-content :space-between ;
+    cursor :pointer;
+    
+    
+}
+.header .container .top .icon:hover{
+    background-color :#3498Db
+}
+.header .container .top .icon i{
+    cursor:pointer;
+}
+
+    .header .container .top .icon h5 {
+        margin-left: 10px;
+    }
+
+.header .container .middle{
+   position :relative ;
+   top:50%;
+   left :50%;
+   transform :translate(-50%,-50%);
+   text-align :center ;
+   
+   
+}
+
+.header .container .middle h2{
+font-size :60px;
+color :floralwhite;
+margin-bottom :30px;
+font-weight :400;
+}
+.header .container .middle p{
+    font-size: 25px;
+    font-weight: 300;
+    color: floralwhite;
+}
+.header .container .bottom{
+    position :relative ;
+    top:50%;
+    left :50%;
+    transform :translate(-50%,-50%);
+    display :flex ;
+    justify-content :center ;
+    align-items :center ;
+
+}
+.header .container .bottom button{
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: white;
+    background-color:#3498Db;
+    border-color: #eee;
+    font-size :20px;
+}
+.header .container .bottom button:hover {
+    background-color: #3498dbd1;
+}
+/*End Header*/
+/*start article-one*/
+.articale-one {
+    margin-bottom :200px;
+    
+}
+.articale-one .container{
+    display :grid ;
+    grid-template-columns :repeat(auto-fill,minmax(300px,1fr));
+}
+
+.articale-one .container .image{
+    position :relative;
+   width :265px;
+   height :265px;
+  
+   
+}
+.articale-one .container .image img{
+    width: 264px;
+    height: 264px;
+    border-radius: 50%;
+    margin-top: 30px;
+    position :relative;
+
+}
+.articale-one .container .image::before{
+   content: "";
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    border: 8px solid;
+    border-color :ghostwhite;
+    border-radius: 50%;
+    bottom: -31.5px;
+    left: -5px;
+}
+
+.articale-one .container .text h2{
+     margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.articale-one .container .text p{
+        width: 580px;
+    color: #666666;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-left :-50px;
+}
+.articale-one .container .tool{
+    position :relative;
+   bottom: -380px;
+     left: -260px;
+}
+    
+ .articale-one .container .tool button {
+    padding: 20px 30px;
+    border-radius: 5px;
+    color: white;
+    background-color:#3498Db;
+    border-color: #eee;
+    font-size :20px 
+  }
+ .articale-one .container .tool button:hover {
+    background-color: #3498dbd1;
+}
+/*End artcle-one*/
+/*Start article-two*/
+.article-two {
+    background-color: #3498db;
+    padding :20px;
+    height :430px;
+}
+.article-two .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    
+   
+}
+.article-two .container .text h2{
+     color: white;
+    margin-bottom: 30px;
+    font-weight: 400
+}
+.article-two .container .text p{
+    width :580px;
+       
+    color: white;
+    line-height: 1.6;
+    font-weight: 300
+}
+.article-two .container .image{
+    position :relative ;
+}
+.article-two .container .image::before{
+    content :"";
+    position :absolute ;
+    
+}
+ .article-two .container .image img {
+  width: 264px;
+  height: 264px;
+  border-radius: 50%;
+  position :relative ;
+  right :-100px;
+  margin-top :30px;
+  border:8px solid white;
+    
+  }
+ .article-two .container .tool button{
+     margin-top :20px;
+     margin-left :30px;
+     padding :15px 30px;
+     border-radius :6px;
+     background-color :white;
+     color :#3498db;
+     border-color :gray ;
+     cursor :pointer ;
+ }
+/*End article-two*/
+/*Start gallary*/
+.gallary {
+    margin-top :50px;
+}
+.gallary .container .top{
+    position :relative;
+    top:50%;
+    left :50%;
+    transform :translate(-50%,-50%) ;
+    text-align :center ;
+    margin-bottom:30px;
+     margin-top :100px;
+
+}
+.gallary .container .top h2{
+  font-size:30px;
+  margin-bottom:30px;
+  font-weight :400;
+}
+.gallary .container .top h4 {
+    color :#ddd;
+}
+.gallary .container .middle {
+    display :grid;
+    grid-template-columns :repeat(auto-fill,minmax(900px,1fr));
+    grid-gap:20px;
+    text-align :center ;
+    justify-content :space-between ;
+}
+
+.gallary .container .middle .image img{
+    height :265px;
+    width :265px;
+    border-radius :50%;
+    margin-left :70px;
+    border :8px solid #ddd;
+}
+.gallary .container .middle .text{
+    width :200px;
+}
+.gallary .middle .text p{
+    color :#ddd;
+    letter-spacing :1.6px;
+}
+.gallary .middle .text p:first-child{
+    position :relative ;
+    left :150px;
+    
+}
+.gallary .middle .text p:nth-child(2){
+   position :relative ;
+   left :520px;
+   top:-80px;
+}
+.gallary .middle .text p:last-child{
+    position :relative ;
+    left :890px;
+    top:-190px;
+}
+.gallary .tool {
+    margin-top :-100px;
+}
+.gallary .tool button{
+    padding: 11px 20px;
+    
+    border-radius: 5px;
+    color: white;
+    background-color:#3498Db;
+    border-color: #eee;
+    font-size :20px;
+}
+.gallary .tool button:hover{
+    background-color :#3498dbd1;
+}
+.gallary .tool button:first-child{
+    position :relative ;
+    left :160px;
+    top:-60px;
+    
+}
+.gallary .tool button:nth-child(2){
+    position :relative ;
+    left :390px;
+    top:-60px;
+}
+.gallary .tool button:last-child{
+    position :relative ;
+    left :600px;
+    top:-60px;
+}
+/*End gallary*/
+/*Strat footer*/
+.footer {
+    margin-top :70px;
+    margin-bottom :100px;
+
+}
+.footer .container {
+ text-align :center ;
+}
+ .footer .container .icon{
+  margin-bottom :50px;
+  display :flex ;
+  justify-content :center ;
+  align-items :center ;
+}
+ .footer .container .icon i{
+    
+     margin-left :30px;
+    
+  
+     cursor :pointer ;
+ }
+ .footer .container .text {
+     display :flex ;
+     justify-content :center ;
+     align-items :center ;
+ }
+
+/*End footer*/
